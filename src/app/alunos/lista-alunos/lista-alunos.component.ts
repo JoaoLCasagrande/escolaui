@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaAlunosComponent implements OnInit {
 
-  constructor() { }
+  alunos: Aluno[] = [];
+  displayedColumns = ['id','nomaluno'];
+
+  constructor(private alunosService: AlunosService) { }
 
   ngOnInit(): void {
+    this.alunos = this.alunosService.list();
   }
 
 }
