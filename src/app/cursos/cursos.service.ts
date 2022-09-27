@@ -7,7 +7,7 @@ import { Curso } from '../core/model';
 })
 export class CursosService {
 
-  private readonly API = 'assets/cursos,json';
+  private readonly API = '/assets/cursos.json';
   constructor(private http: HttpClient) {}
 
   list() {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Aluno } from 'src/app/core/model';
+import { AlunosService } from '../alunos.service';
 
 @Component({
   selector: 'app-lista-alunos',
